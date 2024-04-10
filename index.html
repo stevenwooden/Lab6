@@ -52,11 +52,15 @@
                     <option value="12">D12</option>
                 </select>
                 </div>
-                <button id="roll-dice">Lets Roll!</button>
+                <button id="roll-dice" onclick="rollDice()">Lets Roll!</button>
                 <div id="result"></div>
             </main>
             <script>
-                
+                function rollDice(){
+                    const numDice = +document.getElementById('dice-options').value;
+                    const diceResult = Math.floor(Math.random() * numDice) + 1;
+                    document.getElementById("result").textContent = 'Result: '  + diceResult;
+                }  
 
             </script>
         </body>
