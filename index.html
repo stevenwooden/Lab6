@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html> 
     <head>
         <title>Dice Generator</title>  
+        <style>
+            header {
+                background-color: green;
+                padding: 5px;
+                margin: 20px;
+            }
+            h1  {
+                text-align: center;
+                font-size: 50px;
+                color: white;
+            }
+            .dice   {
+                margin: 100px;
+                align-items: center;
+            }
+            h2{
+                font-size: 30px;
+            }
+            #dice-options   {
+                width: 20%;   
+                font-size: 25px; 
+                font-family: serif;
+                cursor: pointer;
+            }
+            button  {
+                margin-top: 20px;
+                font-size: 20px;
+                padding: 10px;
+                cursor: pointer;
+                background-color: green;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -9,6 +42,8 @@
         </header>
         <body>
             <main class="dice">
+                <div>
+                <h2>Please select Dice</h2>
                 <select id="dice-options">
                     <option value="4">D4</option>
                     <option value="6">D6</option>
@@ -16,8 +51,14 @@
                     <option value="10">D10</option>
                     <option value="12">D12</option>
                 </select>
-                <button></button>
+                </div>
+                <button id="roll-dice">Lets Roll!</button>
+                <div id="result"></div>
             </main>
+            <script>
+                
+
+            </script>
         </body>
     </body>
 </html>
