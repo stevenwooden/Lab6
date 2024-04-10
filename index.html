@@ -66,8 +66,10 @@
                     const numDice = document.getElementById('dice-options').value;
                     const diceResult = Math.floor(Math.random() * numDice) + 1;
                     document.getElementById("result").textContent = 'Result: '  + diceResult;
-                }  
+                    if (diceResult >= numDice){error("Test Failed")}
 
+                }  
+                
             </script>
         </body>
     </body>
