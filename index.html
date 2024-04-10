@@ -34,6 +34,12 @@
                 background-color: green;
                 color: white;
             }
+            #result {
+                margin-top: 1em;
+                font-size: 30px;
+                color: green;
+                font-family: serif;
+            }
         </style>
     </head>
     <body>
@@ -57,7 +63,7 @@
             </main>
             <script>
                 function rollDice(){
-                    const numDice = +document.getElementById('dice-options').value;
+                    const numDice = document.getElementById('dice-options').value;
                     const diceResult = Math.floor(Math.random() * numDice) + 1;
                     document.getElementById("result").textContent = 'Result: '  + diceResult;
                 }  
