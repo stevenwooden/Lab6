@@ -66,8 +66,8 @@
                     const diceResult = Math.floor(Math.random() * numDice) + 1;
                     document.getElementById("result").textContent = 'Result: '  + diceResult;
                     //UNIT TEST
-                    if (diceResult >= numDice){error("Test Failed")}
-                    if (diceResult <= 1){error("TestFailed")}
+                    if (diceResult > numDice){error("Test Failed")}
+                    if (diceResult < 1){error("TestFailed")}
                 }  
                 
             </script>
